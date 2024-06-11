@@ -5,6 +5,7 @@ const sequelizeDatabase = require("./config/database");
 const MovieRoutes = require("./routes/MovieRoute");
 const typeDefs = require("./schema/MovieSchema");
 const resolvers = require("./resolvers/MovieResolver");
+const index = require("./models/index");
 
 // Sync the Movie model with the database
 sequelizeDatabase.sync({ force: false }).then(() => {
